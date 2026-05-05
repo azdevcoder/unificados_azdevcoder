@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AzDev Coder - Workspace</title>
+    <!-- Favicon AzDev -->
+    <link rel="icon" type="image/png" href="logonutrigenes.png"> <!-- Use sua logo aqui também se desejar -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #020617; /* Slate 950 - Ultra Dark */
+            color: #f1f5f9;
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(56, 189, 248, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            
+        }
+        .glass-card:hover {
+            border-color: #0ea5e9; /* Sky Blue */
+            transform: translateY(-6px);
+            box-shadow: 0 0 20px rgba(14, 165, 233, 0.15);
+            background: rgba(15, 23, 42, 0.9);
+        }
+        .accent-text {
+            color: #22d3ee; /* Ciano */
+        }
+        .favicon-img {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-12 px-6">
+
+    <!-- Header AzDev Coder -->
+    <div class="text-center mb-12">
+        <div class="flex justify-center mb-4">
+             <!-- Se tiver a logo da AzDev, pode colocar uma tag img aqui -->
+             <div class="w-12 h-1 bg-cyan-500 rounded-full"></div>
+        </div>
+        <h1 class="text-3xl font-black tracking-tighter uppercase">AzDev <span class="accent-text">Coder</span></h1>
+        <p class="text-slate-500 text-sm mt-2 font-medium tracking-widest uppercase">Internal Workspace</p>
+    </div>
+
+    <!-- Grid de Ferramentas -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 w-full max-w-5xl">
+        
+        <!-- IA & Brainstorming -->
+        <a href="https://gemini.google.com/" target="_blank" class="glass-card p-6 rounded-2xl flex flex-col items-center text-center">
+            <img src="https://www.google.com/s2/favicons?domain=gemini.google.com&sz=64" alt="Gemini" class="favicon-img mb-4">
+            <h2 class="text-sm font-bold uppercase tracking-tight">Gemini AI</h2>
+            <p class="text-[10px] text-slate-500 mt-1">Brainstorming & Codificação</p>
+        </a>
+
+        <!-- Desenvolvimento -->
+        <a href="https://github.com/azdevcoder" target="_blank" class="glass-card p-6 rounded-2xl flex flex-col items-center text-center">
+            <img src="https://www.google.com/s2/favicons?domain=github.com&sz=64" alt="GitHub" class="favicon-img mb-4">
+            <h2 class="text-sm font-bold uppercase tracking-tight">GitHub</h2>
+            <p class="text-[10px] text-slate-500 mt-1">Repositórios & Versão</p>
+        </a>
+
+        <!-- Gestão de Projetos -->
+        <a href="https://trello.com/b/aBqPHU7P/projetos" target="_blank" class="glass-card p-6 rounded-2xl flex flex-col items-center text-center">
+            <img src="https://www.google.com/s2/favicons?domain=trello.com&sz=64" alt="Trello" class="favicon-img mb-4">
+            <h2 class="text-sm font-bold uppercase tracking-tight">Trello</h2>
+            <p class="text-[10px] text-slate-500 mt-1">Projetos & Sprints</p>
+        </a>
+
+        <!-- Networking -->
+        <a href="https://www.linkedin.com/mynetwork/grow/" target="_blank" class="glass-card p-6 rounded-2xl flex flex-col items-center text-center">
+            <img src="https://www.google.com/s2/favicons?domain=linkedin.com&sz=64" alt="LinkedIn" class="favicon-img mb-4">
+            <h2 class="text-sm font-bold uppercase tracking-tight">LinkedIn</h2>
+            <p class="text-[10px] text-slate-500 mt-1">Network & Presença Digital</p>
+        </a>
+
+        <!-- Email Pessoal/Dev -->
+        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="glass-card p-6 rounded-2xl flex flex-col items-center text-center">
+            <img src="https://www.google.com/s2/favicons?domain=mail.google.com&sz=64" alt="Gmail" class="favicon-img mb-4">
+            <h2 class="text-sm font-bold uppercase tracking-tight">Gmail</h2>
+            <p class="text-[10px] text-slate-500 mt-1">Comunicação Google</p>
+        </a>
+
+        <!-- Email Corporativo -->
+        <a href="https://mail.zoho.com/" target="_blank" class="glass-card p-6 rounded-2xl flex flex-col items-center text-center">
+            <img src="https://www.google.com/s2/favicons?domain=zoho.com&sz=64" alt="Zoho" class="favicon-img mb-4">
+            <h2 class="text-sm font-bold uppercase tracking-tight">Zoho Mail</h2>
+            <p class="text-[10px] text-slate-500 mt-1">E-mail AzDev Coder</p>
+        </a>
+
+        <!-- Agenda -->
+        <a href="https://calendar.google.com/" target="_blank" class="glass-card p-6 rounded-2xl flex flex-col items-center text-center">
+            <img src="https://www.google.com/s2/favicons?domain=calendar.google.com&sz=64" alt="Calendar" class="favicon-img mb-4">
+            <h2 class="text-sm font-bold uppercase tracking-tight">Calendar</h2>
+            <p class="text-[10px] text-slate-500 mt-1">Agendamentos & Reuniões</p>
+        </a>
+
+        <!-- Comunicação Real-time -->
+        <a href="https://web.telegram.org" target="_blank" class="glass-card p-6 rounded-2xl flex flex-col items-center text-center">
+            <img src="https://www.google.com/s2/favicons?domain=telegram.org&sz=64" alt="Telegram" class="favicon-img mb-4">
+            <h2 class="text-sm font-bold uppercase tracking-tight">Telegram</h2>
+            <p class="text-[10px] text-slate-500 mt-1">Chat & Comunidades Dev</p>
+        </a>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto pt-12 text-slate-600 text-[10px] uppercase tracking-[0.3em] font-semibold">
+        &copy; 2026 — <span class="text-cyan-600">Desenvolvido por AzDev Coder</span>
+    </footer>
+
+</body>
+</html>
